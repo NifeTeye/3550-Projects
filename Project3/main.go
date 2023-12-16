@@ -394,12 +394,8 @@ func AuthHandler(w http.ResponseWriter, r *http.Request) {
 
 	// Get user ID from authentication logic (replace with actual logic)
 	userID := 123
-
-	// Log the authentication request
 	logAuthRequest(r.RemoteAddr, userID)
 }
-
-// Add this section
 
 func RegisterHandler(w http.ResponseWriter, r *http.Request) {
    if r.Method != http.MethodPost {
